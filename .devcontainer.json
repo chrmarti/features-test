@@ -1,5 +1,5 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:latest",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -8,7 +8,13 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+        "ghcr.io/chrmarti/features-test/hello": "latest",
+        "./src/color": "latest",
+        "./src/node": "latest",
+        "./src/nix": {
+            "username": "vscode",
+            "packages": "vim"
+        }
     },
-    "postCreateCommand": "npm install -g @devcontainers/cli"
+    "remoteUser": "vscode"
 }

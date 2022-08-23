@@ -1,0 +1,28 @@
+name: "CI - Test Features"
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        features: [
+            "color",
+            "hello",
+            "node",
+            "nix",
+          ]
+        baseImage: [ "ubuntu:focal", "ubuntu:jammy", "debian:11", "mcr.microsoft.com/vscode/devcontainers/base:ubuntu", "mcr.microsoft.com/vscode/devcontainers/base:debian" ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: " Testing '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} -c `pwd`
