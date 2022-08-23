@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "Activating feature 'hello'"
 
 GREETING=${GREETING:-undefined}

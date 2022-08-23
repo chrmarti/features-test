@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 for USERNAME in `ls /home`
 do
 	su $USERNAME -c "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash"

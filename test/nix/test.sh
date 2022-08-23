@@ -1,3 +1,8 @@
 #!/bin/sh
 
-which nix-env
+set -e
+
+for USERNAME in `ls /home`
+do
+	which nix-env
+done

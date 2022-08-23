@@ -1,3 +1,8 @@
 #!/bin/sh
 
-which node
+set -e
+
+for USERNAME in `ls /home`
+do
+	which node
+done
