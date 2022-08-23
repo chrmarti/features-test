@@ -13,8 +13,10 @@
         "./src/node": "latest",
         "./src/nix": {
             "username": "vscode",
+            // "packages": "python3 gcc gnumake binutils"
             "packages": "vim"
         }
     },
+    // "postCreateCommand": "npm install -g @devcontainers/cli",
     "remoteUser": "vscode"
 }
