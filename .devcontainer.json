@@ -8,14 +8,14 @@
         }
     },
     "features": {
-        "ghcr.io/chrmarti/features-test/hello": "latest",
-        "./src/color": "latest",
-        "./src/node": "latest",
-        "./src/nix": {
-            // "packages": "python3 gcc gnumake binutils"
-            "packages": "vim"
-        }
-    },
+        "./src/hello": "latest",
+        "./src/color": "latest"
+        // "./src/node": "latest",
+        // "./src/nix": {
+        //     // "packages": "python3 gcc gnumake binutils"
+        //     "packages": "vim"
+        // }
+    }
     // "postCreateCommand": "npm install -g @devcontainers/cli",
-    "remoteUser": "vscode"
+    // "remoteUser": "vscode"
 }
