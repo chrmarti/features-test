@@ -25,4 +25,4 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: " Testing '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
-        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} -c `pwd` .
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
