@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
@@ -9,7 +9,7 @@ echo "The provided greeting is: $GREETING"
 
 tee /usr/local/bin/hello > /dev/null \
 << EOF
-#!/bin/bash
+#!/bin/sh
 RED='\033[0;91m'
 NC='\033[0m' # No Color
 echo -e -n "\${RED}${GREETING}, \$(whoami)!"

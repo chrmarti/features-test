@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
@@ -7,7 +7,7 @@ echo "The provided favorite color is: ${FAVORITE}"
 
 tee /usr/local/bin/color > /dev/null \
 << EOF
-#!/bin/bash
+#!/bin/sh
 echo -e -n "my favorite color is ${FAVORITE}"
 EOF
 

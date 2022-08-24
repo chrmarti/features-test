@@ -1,6 +1,11 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
+
+if [ ! -x /bin/bash ]
+then
+	apk update && apk add bash
+fi
 
 for USERNAME in `ls /home`
 do
