@@ -8,8 +8,8 @@
         }
     },
     "features": {
-        "./src/hello": "latest",
-        "./src/color": "latest"
+        "ghcr.io/chrmarti/features-test/hello": "latest",
+        "ghcr.io/chrmarti/features-test/color": "latest"
         // "./src/node": "latest",
         // "./src/nix": {
         //     // "packages": "python3 gcc gnumake binutils"
