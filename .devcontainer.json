@@ -12,7 +12,6 @@
         "./src/color": "latest",
         "./src/node": "latest",
         "./src/nix": {
-            "username": "vscode",
             // "packages": "python3 gcc gnumake binutils"
             "packages": "vim"
         }
