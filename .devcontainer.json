@@ -8,14 +8,10 @@
         }
     },
     "features": {
-        "ghcr.io/chrmarti/features-test/hello:2": "latest",
-        "ghcr.io/chrmarti/features-test/color:12": "latest"
-        // "./src/node": "latest",
-        // "./src/nix": {
-        //     // "packages": "python3 gcc gnumake binutils"
-        //     "packages": "vim"
-        // }
-    }
-    // "postCreateCommand": "npm install -g @devcontainers/cli",
-    // "remoteUser": "vscode"
+        "./src/hello": "latest",
+        "./src/color": "latest"
+        // "ghcr.io/chrmarti/features-test/hello:2": "latest",
+        // "ghcr.io/chrmarti/features-test/color:12": "latest"
+    },
+    "remoteUser": "vscode"
 }
