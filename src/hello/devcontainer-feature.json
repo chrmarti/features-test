@@ -1,6 +1,6 @@
 {
     "id": "hello",
-    "version": "2.3.4",
+    "version": "2.5.6",
     "name": "A hello world feature",
     "options": {
         "greeting": {

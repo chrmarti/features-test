@@ -12,7 +12,7 @@ tee /usr/local/bin/hello > /dev/null \
 #!/bin/sh
 RED='\033[0;91m'
 NC='\033[0m' # No Color
-echo "\${RED}${GREETING}, \$(whoami)!\${NC} (hello 2.3.4)"
+echo "\${RED}${GREETING}, \$(whoami)!\${NC} (hello 2.5.6)"
 EOF
 
 chmod +x /usr/local/bin/hello
